@@ -1,4 +1,5 @@
 package com.louiserennick.treasurehunapp
+import androidx.compose.foundation.background
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -46,6 +47,7 @@ fun TreasureHuntApp() {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
+                    .background(Color(0xFFFFF3E0))
                     .padding(padding)
                     .padding(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
@@ -58,7 +60,7 @@ fun TreasureHuntApp() {
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Image(
-                    painter = painterResource(id = R.drawable.city_map),
+                    painter = painterResource(id = R.drawable.treasure_map),
                     contentDescription = "City Map",
                     modifier = Modifier
                         .fillMaxWidth()
